@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3B94BA8-98CC-4424-B47D-052AC6C5C371}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YNAB.Model</RootNamespace>
+    <AssemblyName>YNAB.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountResponse.cs" />
+    <Compile Include="AccountsResponse.cs" />
+    <Compile Include="AccountsWrapper.cs" />
+    <Compile Include="AccountWrapper.cs" />
+    <Compile Include="BudgetDetail.cs" />
+    <Compile Include="BudgetDetailResponse.cs" />
+    <Compile Include="BudgetDetailWrapper.cs" />
+    <Compile Include="BudgetSettings.cs" />
+    <Compile Include="BudgetSettingsResponse.cs" />
+    <Compile Include="BudgetSettingsWrapper.cs" />
+    <Compile Include="BudgetSummary.cs" />
+    <Compile Include="BudgetSummaryResponse.cs" />
+    <Compile Include="BudgetSummaryWrapper.cs" />
+    <Compile Include="BulkIds.cs" />
+    <Compile Include="BulkIdWrapper.cs" />
+    <Compile Include="BulkResponse.cs" />
+    <Compile Include="BulkTransactions.cs" />
+    <Compile Include="CategoriesResponse.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="CategoryGroup.cs" />
+    <Compile Include="CategoryGroupsWrapper.cs" />
+    <Compile Include="CategoryGroupWithCategories.cs" />
+    <Compile Include="CategoryResponse.cs" />
+    <Compile Include="CategoryWrapper.cs" />
+    <Compile Include="CurrencyFormat.cs" />
+    <Compile Include="DateFormat.cs" />
+    <Compile Include="ErrorDetail.cs" />
+    <Compile Include="ErrorResponse.cs" />
+    <Compile Include="HybridTransaction.cs" />
+    <Compile Include="HybridTransactionsResponse.cs" />
+    <Compile Include="HybridTransactionsWrapper.cs" />
+    <Compile Include="MonthDetail.cs" />
+    <Compile Include="MonthDetailResponse.cs" />
+    <Compile Include="MonthDetailWrapper.cs" />
+    <Compile Include="MonthSummariesResponse.cs" />
+    <Compile Include="MonthSummariesWrapper.cs" />
+    <Compile Include="MonthSummary.cs" />
+    <Compile Include="Payee.cs" />
+    <Compile Include="PayeeLocation.cs" />
+    <Compile Include="PayeeLocationResponse.cs" />
+    <Compile Include="PayeeLocationsResponse.cs" />
+    <Compile Include="PayeeLocationsWrapper.cs" />
+    <Compile Include="PayeeLocationWrapper.cs" />
+    <Compile Include="PayeeResponse.cs" />
+    <Compile Include="PayeesResponse.cs" />
+    <Compile Include="PayeesWrapper.cs" />
+    <Compile Include="PayeeWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveMonthCategory.cs" />
+    <Compile Include="SaveMonthCategoryWrapper.cs" />
+    <Compile Include="SaveTransaction.cs" />
+    <Compile Include="SaveTransactionsResponse.cs" />
+    <Compile Include="SaveTransactionsResponseData.cs" />
+    <Compile Include="SaveTransactionsWrapper.cs" />
+    <Compile Include="SaveTransactionWrapper.cs" />
+    <Compile Include="ScheduledSubTransaction.cs" />
+    <Compile Include="ScheduledTransactionDetail.cs" />
+    <Compile Include="ScheduledTransactionResponse.cs" />
+    <Compile Include="ScheduledTransactionsResponse.cs" />
+    <Compile Include="ScheduledTransactionSummary.cs" />
+    <Compile Include="ScheduledTransactionsWrapper.cs" />
+    <Compile Include="ScheduledTransactionWrapper.cs" />
+    <Compile Include="SubTransaction.cs" />
+    <Compile Include="TransactionDetail.cs" />
+    <Compile Include="TransactionResponse.cs" />
+    <Compile Include="TransactionsResponse.cs" />
+    <Compile Include="TransactionSummary.cs" />
+    <Compile Include="TransactionsWrapper.cs" />
+    <Compile Include="TransactionWrapper.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserResponse.cs" />
+    <Compile Include="UserWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
