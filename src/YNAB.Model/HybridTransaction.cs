@@ -17,7 +17,7 @@ namespace YNAB.Model {
     /// </summary>
     [DataMember(Name="id", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "id")]
-    public Guid? Id { get; set; }
+    public string Id { get; set; }
 
     /// <summary>
     /// Gets or Sets Date
@@ -100,7 +100,7 @@ namespace YNAB.Model {
     /// <value>If a transfer transaction, the id of transaction on the other side of the transfer</value>
     [DataMember(Name="transfer_transaction_id", EmitDefaultValue=false)]
     [JsonProperty(PropertyName = "transfer_transaction_id")]
-    public Guid? TransferTransactionId { get; set; }
+    public string TransferTransactionId { get; set; }
 
     /// <summary>
     /// If the Transaction was imported, this field is a unique (by account) import identifier.  If this transaction was imported through File Based Import or Direct Import and not through the API, the import_id will have the format: 'YNAB:[milliunit_amount]:[iso_date]:[occurrence]'.  For example, a transaction dated 2015-12-30 in the amount of -$294.23 USD would have an import_id of 'YNAB:-294230:2015-12-30:1'.  If a second transaction on the same account was imported and had the same date and same amount, its import_id would be 'YNAB:-294230:2015-12-30:2'.
